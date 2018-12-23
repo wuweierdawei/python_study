@@ -2,7 +2,7 @@
 
 # func 为被装饰方法
 def print_func(func):
-    # *args,**kwargs都是可变参数
+    # *args,**kwargs 都是可变参数
     # *args表示任何多个无名参数
     # 它是一个tuple；**kwargs表示关键字参数，它是一个 dict
     def wrapper(*args, **kwargs):
