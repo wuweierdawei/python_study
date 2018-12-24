@@ -3,9 +3,9 @@
 # 定义变量 变量交换值
 def _variable():
     a, b = 1, 2
-    print a, b
+    print(a, b)
     a, b = b, a
-    print a, b
+    print(a, b)
 
 
 _variable()
@@ -15,7 +15,7 @@ _variable()
 def _enumerate():
     a = ["a", "b", "c"]
     for _i, _v in enumerate(a):
-        print {_i: _v}
+        print({_i: _v})
 
 
 _enumerate()
@@ -23,8 +23,8 @@ _enumerate()
 
 # 字符串连接
 def _str_join():
-    l = ['a', 'b', 'c']
-    print ",".join(l)
+    _l = ['a', 'b', 'c']
+    print(",".join(_l))
 
 
 _str_join()
@@ -44,5 +44,3 @@ def _grace_file():
     # 使用 with 语句 系统会在执行完文件操作后自动关闭文件对象
     with open('data.txt') as f:
         data = f.read()
-
-

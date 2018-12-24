@@ -7,7 +7,7 @@ def print_func(func):
     # 它是一个tuple；**kwargs表示关键字参数，它是一个 dict
     def wrapper(*args, **kwargs):
         # 装饰器功能扩展
-        print 'print_fun:{}'.format(kwargs['c'])
+        print('print_fun:{}'.format(kwargs['c']))
         # 回调被装饰方法
         func(*args, **kwargs)
 
@@ -20,14 +20,14 @@ class PrintFunc:
         self.func = func
 
     def __call__(self, *args, **kwargs):
-        print 'PrintFunc:{}'.format(kwargs['c'])
+        print('PrintFunc:{}'.format(kwargs['c']))
         return self.func(*args, **kwargs)
 
 
 @print_func
 @PrintFunc
 def main_func(a, b, c):
-    print 'main_func:{}:{}'.format(a + b, c)
+    print('main_func:{}:{}'.format(a + b, c))
     return True
 
 
