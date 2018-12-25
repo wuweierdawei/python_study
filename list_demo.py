@@ -4,6 +4,7 @@
 def _enumerate():
     a = ["a", "b", "c"]
     for _i, _v in enumerate(a):
+        # print:enumerate: {0: 'a'}
         print("enumerate:", {_i: _v})
 
 
@@ -19,6 +20,7 @@ def _map():
     return _r
 
 
+# print:map: a!,b!,c!
 print("map:", _map())
 
 
@@ -30,6 +32,7 @@ def _filter():
     return _r
 
 
+# print:filter: a
 print("filter:", _filter())
 
 
@@ -47,4 +50,18 @@ def _reduce():
     return reduce(_func, _l)
 
 
+# print:reduce: {'v': 6}
 print("reduce:", _reduce())
+
+
+# zip
+def _zip():
+    f_name = ["张", "李", "王"]
+    s_name = ["三", "四", "五"]
+    for _i in zip(f_name, s_name):
+        # _i为元组tuple("张","三")
+        # print:张三
+        print("".join(_i))
+
+
+_zip()
