@@ -54,7 +54,7 @@ def _reduce():
 print("reduce:", _reduce())
 
 
-# zip
+# zip循环两个数组
 def _zip():
     f_name = ["张", "李", "王"]
     s_name = ["三", "四", "五"]
