@@ -1,5 +1,22 @@
 # -*- coding: utf-8 -*-
 
+# list
+def _list_init():
+    a = [{
+        "a": 1,
+    }, {
+        "a": 2,
+    }, {
+        "a": 3,
+    }]
+    _a = [_i['a'] for _i in a]
+    # [1, 2, 3]
+    print(_a)
+
+
+_list_init()
+
+
 # list 加 index
 def _enumerate():
     a = ["a", "b", "c"]
