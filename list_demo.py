@@ -9,8 +9,8 @@ def _list_iterator():
     }, {
         "a": 3,
     }]
-    _a = [_i['a'] for _i in a]
-    # [1, 2, 3]
+    _a = [_i['a'] for _i in a if _i['a'] > 1]
+    # [2, 3]
     print(_a)
 
 
