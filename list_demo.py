@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # list
-def _list_init():
+def _list_iterator():
     a = [{
         "a": 1,
     }, {
@@ -14,7 +14,7 @@ def _list_init():
     print(_a)
 
 
-_list_init()
+_list_iterator()
 
 
 # list 加 index
