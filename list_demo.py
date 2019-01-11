@@ -4,8 +4,10 @@
 def _enumerate():
     a = ["a", "b", "c"]
     for _i, _v in enumerate(a):
-        # print:enumerate: {0: 'a'}
         print("enumerate:", {_i: _v})
+    # print:enumerate: {0: 'a'}
+    # print:enumerate: {1: 'b'}
+    # print:enumerate: {2: 'c'}
 
 
 _enumerate()
