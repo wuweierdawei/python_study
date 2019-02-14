@@ -3,8 +3,8 @@
 # func 为被装饰方法
 def print_func(func):
     # *args,**kwargs 都是可变参数
-    # *args表示任何多个无名参数
-    # 它是一个tuple；**kwargs表示关键字参数，它是一个 dict
+    # *args表示任何多个无名参数，它是一个tuple
+    # **kwargs表示关键字参数，它是一个 dict
     def wrapper(*args, **kwargs):
         # 装饰器功能扩展
         print('print_fun:{}'.format(kwargs['c']))
@@ -31,4 +31,7 @@ def main_func(a, b, c):
     return True
 
 
+# print_fun:{'c': 'hello!'}
+# PrintFunc:{'c': 'hello!'}
+# main_func:3:{'c': 'hello!'}
 main_func(1, 2, c={"c": "hello!"})
