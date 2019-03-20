@@ -4,7 +4,7 @@ def dynamic_run(py_script, param):
     try:
         g_context, l_context = {}, {}
         g_context.update(param)
-        # g_context 传入执行参数
+        # g_context 传入执行的参数
         # l_context 收集执行后参数
         exec(py_script, g_context, l_context)
     except Exception as e:
